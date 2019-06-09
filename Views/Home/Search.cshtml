@@ -1,0 +1,15 @@
+﻿@using Assessment7Mock.Models;
+@{
+    Doughnut d = ViewBag.Donut;
+}
+<p>@d.Name blah</p>
+<p>@d.Calories</p>
+<img src="@d.PhotoURL" height="200"/>
+
+@{
+    foreach(string s in d.Extras)
+    {
+        <p>@s</p>
+    }
+
+}
